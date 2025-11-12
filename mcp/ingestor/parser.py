@@ -68,3 +68,10 @@ class ComponentDetail:
             d.get("body", ""),
             d.get("references", [])
         )
+
+class ParsedFirmware:
+    """"
+    Central Container:
+        files   : path -> FileDetails instance of FileDetails with path
+        components: FileDetails
+    """
